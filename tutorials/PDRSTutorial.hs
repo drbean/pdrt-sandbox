@@ -95,7 +95,7 @@ examplePDRS5 = PDRS 1 [] [PRef 1 (PDRSRef "x"),PRef 1 (PDRSRef "p")]
                   ,PCon 1 (Rel (PDRSRel "believes") [PDRSRef "x",PDRSRef "p"])
                   ,PCon 1 (Prop (PDRSRef "p") 
                     (PDRS 2 [(2,3)] [PRef 3 (PDRSRef "y")]
-                      [PCon 3 (Rel (PDRSRel "woman") [PDRSRef "y"])
+                      [PCon 3 (Rel (PDRSRel "woman") [PDRSRef "x"])
                       ,PCon 2 (Rel (PDRSRel "loves") [PDRSRef "x",PDRSRef "y"])]))]
 
 --------------------------------------------------------------------------------
