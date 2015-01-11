@@ -16,6 +16,7 @@ module Data.DRS.Show
 (
 -- * Show DRS (pretty printing)
   DRSNotation (..)
+, showCond
 , showDRS
 , printDRS
 , showMerge
@@ -404,6 +405,9 @@ showWhitespace l = replicate l ' '
 ---------------------------------------------------------------------------
 showUniverse :: [DRSRef] -> String -> String
 showUniverse u d = intercalate d (map drsRefToDRSVar u)
+
+showCond :: DRSCon -> String
+showCond c = showConditions [c]
 
 ---------------------------------------------------------------------------
 -- | Shows the conditions @c@ of a 'DRS'.
