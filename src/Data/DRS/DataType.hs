@@ -50,7 +50,7 @@ data DRSRef =
   -- to be applied to the referent, and its argument position)
   | DRSRef DRSVar
   -- ^ A DRS referent
-  deriving (Eq,Read,Show)
+  deriving (Ord,Eq,Read,Show)
 
 ---------------------------------------------------------------------------
 -- | DRS relation
